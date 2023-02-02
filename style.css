@@ -22,7 +22,8 @@ body{
     background: white;
     border:1px solid orangered;
     text-align: center;
-    width: 400px;
+    height: 60px;
+    width: 26%;
 }
 
 .bold-heading{
@@ -37,11 +38,56 @@ body{
     margin-bottom: -4px;
 }
 
+@media (max-width:680px)
+{
+    .bold-heading{
+        font-size: 20px;
+    }
+
+    .bold-content{
+        font-size:10px;
+    }
+}
+
+@media (max-width:480px){
+    .bold-heading{
+        font-size: 15px;
+    }
+}
+
+/* Center-Part */
+
+.center-part{
+    align-self: center;
+    padding-top:30px;
+    width:100%;
+}
+
+.all-news{
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    flex-basis: 33.33%;
+}
+
+.horizontal-line{
+    border:solid 1px black;
+    border-width: 2px 0 0 0;
+}
+
 /* Section-1 */
 
 .section-1{
     display:flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
+
+.select-catogory,.enter-email{
+    flex-basis: 33.33%;
+}
+
+/* Left-Part */
 
 .select-option{
     border: solid 2px rgb(64 60 67 / 32%);
@@ -49,13 +95,11 @@ body{
     width:120px;
 }
 
-.select-catogory,.enter-email{
-    flex: 50%;
-}
-
 .select-catogory{
     padding:25px 0 0 25px;
 }
+
+/* Right-Part */
 
 .content{
     font-family: 'Open Sans', sans-serif;
@@ -64,7 +108,7 @@ body{
 }
 
 .enter-email{
-    padding:25px 0 0 260px;
+    padding:25px 0 0 0;
 }
 
 .email-data{
@@ -84,22 +128,17 @@ body{
     padding:3px;
 }
 
+@media (max-width:800px){
+    .section-1{
+        display: block;
+    }
+
+    .enter-email{
+        margin-left:20px;
+    }
+}
+
 /* Section-2 */
-
-.all-news{
-    text-align: center;
-    font-size:40px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    margin-top:-20px;
-}
-
-.horizontal-line{
-    border:solid 1px black;
-    border-width: 2px 0 0 0;
-}
-
-/* Section-3 */
 
 .grey-color{
     border-color:  rgb(64 60 67 / 48%);
@@ -141,10 +180,7 @@ body{
 }
 
 @media (max-width: 1000px) {
-    body{
-        /* background-color: lightgreen; */
-    }
-
+    
     .block{
         height: 435px;
     }
@@ -158,6 +194,18 @@ body{
       position: static;
     }
   }
+
+@media (max-width:750px){
+    .horizontal-line{
+        margin-top:30px;
+    }
+}
+
+@media (max-width:580px){
+    .horizontal-line{
+        margin-top:50px;
+    }
+}
 
 /* Footer */
 
