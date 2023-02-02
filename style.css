@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:10px 10px 0;
+}
+
+/* Header */
+
+.background-blue{
+    align-items: center;
+    background: #153462;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.background-white{
+    background: white;
+    border:1px solid orangered;
+    text-align: center;
+    width: 400px;
+}
+
+.bold-heading{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.bold-content{
+    font-size:13px;
+    font-weight: bold;
+    margin-bottom: -4px;
+}
+
+/* Section-1 */
+
+.section-1{
+    display:flex;
+}
+
+.select-option{
+    border: solid 2px rgb(64 60 67 / 32%);
+    border-radius: 2px;
+    width:120px;
+}
+
+.select-catogory,.enter-email{
+    flex: 50%;
+}
+
+.select-catogory{
+    padding:25px 0 0 25px;
+}
+
+.content{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.enter-email{
+    padding:25px 0 0 260px;
+}
+
+.email-data{
+    border-radius: 3px;
+    border:none 1px;
+    box-shadow: 2px 1px 0px 1px rgb(64 60 67 / 16%);
+    height:28px;
+}
+
+.black-button{
+    background-color: black;
+    border-width: 1px 0 0 2px;
+    border-color: grey;
+    color:white;
+    display: inline;
+    margin-left:3px;
+    padding:3px;
+}
+
+/* Section-2 */
+
+.all-news{
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top:-20px;
+}
+
+.horizontal-line{
+    border:solid 1px black;
+    border-width: 2px 0 0 0;
+}
+
+/* Section-3 */
+
+.grey-color{
+    border-color:  rgb(64 60 67 / 48%);
+}
+
+.block{
+    margin-top:25px;
+    height:225px;
+}
+
+.grey-image{
+    position: absolute;
+    width:200px;
+    z-index:-1;
+}
+
+.content-part{
+    margin-left:17%;
+}
+
+.content-title{
+    color:#00337C;
+    font-size:26px;
+    margin-top:10px;
+}
+
+.posted-on{
+    margin:10px 0;
+    font-weight: normal;
+}
+
+.continue-reading{
+    background-color: orangered;
+    box-shadow: 2px 1px 1px 1px rgb(64 60 67 / 30%);
+    color:white;
+    display: inline-block;
+    margin-top:17px;
+    padding:8px;
+}
+
+@media (max-width: 1000px) {
+    body{
+        /* background-color: lightgreen; */
+    }
+
+    .block{
+        height: 435px;
+    }
+
+    .content-part{
+        margin-left:0;
+    }
+
+    .grey-image {
+      display: block;
+      position: static;
+    }
+  }
+
+/* Footer */
+
+.footer{
+    background: #153462;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.color-blue{
+    background-color: #6a91c0;
+    width: 124px;
+}
