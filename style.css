@@ -8,33 +8,48 @@ body{
     padding:10px 10px 0;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
 /* Header */
 
 .background-blue{
-    align-items: center;
     background: #153462;
-    display: flex;
-    justify-content: center;
     height: 120px;
 }
 
 .background-white{
     background: white;
     border:1px solid orangered;
-    text-align: center;
+    /* text-align: center; */
     height: 60px;
     width: 26%;
 }
 
 .bold-heading{
     font-size: 30px;
-    font-weight: bold;
     margin: 5px 0;
 }
 
 .bold-content{
     font-size:13px;
-    font-weight: bold;
     margin-bottom: -4px;
 }
 
@@ -64,25 +79,18 @@ body{
 }
 
 .all-news{
-    text-align: center;
     font-size:40px;
     font-weight: bold;
     flex-basis: 33.33%;
 }
 
-.horizontal-line{
-    border:solid 1px black;
-    border-width: 2px 0 0 0;
-}
-
 /* Section-1 */
 
 .section-1{
-    display:flex;
+    border-bottom: 2px solid black;
     justify-content: space-between;
     margin-bottom: 30px;
     padding-bottom: 40px;
-    border-bottom: 2px solid black;
 }
 
 .select-catogory,.enter-email{
@@ -105,7 +113,6 @@ body{
 
 .content{
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     margin-bottom: 4px;
 }
 
@@ -142,30 +149,20 @@ body{
 
 /* Section-2 */
 
-.grey-color{
-    border-color:  rgb(64 60 67 / 48%);
-}
-
 .block{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    gap: 32px;
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid grey;
 }
 
-.grey-image{
-    position: absolute;
+.image-width{
     width:200px;
-    z-index:-1;
 }
 
 .content-part{
-    margin-left:17%;
+    max-width:80%;
 }
 
 .content-title{
@@ -187,43 +184,17 @@ body{
     margin-top:17px;
     padding:8px;
 }
-/* 
-@media (max-width: 1000px) {
-    
-    .block{
-        height: 435px;
-    }
 
-    .content-part{
-        margin-left:0;
-    }
-
-    .grey-image {
-      display: block;
-      position: static;
-    }
-  }
-
-@media (max-width:750px){
-    .horizontal-line{
-        margin-top:30px;
-    }
+.no-border{
+    border:none;
+    padding-bottom: 0;
 }
-
-@media (max-width:580px){
-    .horizontal-line{
-        margin-top:50px;
-    }
-} */
 
 /* Footer */
 
 footer{
     background: #153462;
     color:white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 .color-blue{
