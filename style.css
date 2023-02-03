@@ -80,7 +80,9 @@ body{
 .section-1{
     display:flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid black;
 }
 
 .select-catogory,.enter-email{
@@ -151,6 +153,9 @@ body{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid grey;
 }
 
 .grey-image{
@@ -213,7 +218,7 @@ body{
 
 /* Footer */
 
-.footer{
+footer{
     background: #153462;
     color:white;
     text-align: center;
